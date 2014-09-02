@@ -62,7 +62,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="images/logo.png" alt="logo" width="200"/></a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="images/logo.png" class="logo" alt="logo"/></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -142,8 +142,6 @@
     </div>
     </section>
     <!-- End Share Section -->
-
-
     <section class="donate">
       <a href="#dontation"><div class="col-sm-6 col-sm-offset-3 text-center"><h2 class="space-heading">Please donate to support our Social Impact</h2></div></a>
     </section>
@@ -250,3 +248,10 @@
     <script src="js/script.js"></script>
 </body>
 </html>
+
+Brian Kernighan's
+
+unsigned int v;          // count the number of bits set in v
+unsigned int c;          // c accumulates the total bits set in v
+for (c = 0; v; c++)
+{   v &= v - 1;  }

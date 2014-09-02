@@ -218,6 +218,12 @@ fieldset[disabled] .btn-xl.active {
     margin: -100px 0 0 -100px;
 }
 
+.logo{
+    bottom: 22px;
+    position: relative;
+    width: 300px;
+}
+
 /* Share Section */
 
 .social{padding:0;background-color:#d5ddde}
