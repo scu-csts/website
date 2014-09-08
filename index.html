@@ -32,13 +32,15 @@
     <!-- for Apple iOS -->
     <link rel="shortcut icon" href="images/thumbnail.png" />
     <link rel="apple-touch-icon" href="images/thumbnail.png" />
-
+    <!-- Boot Override CSS -->
+    <link href="css/override.css" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link href='http://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,17 +58,12 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                <a class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Menu</a>
                 <a class="navbar-brand page-scroll" href="#page-top"><img src="images/logo.png" class="logo" alt="logo"/></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<!--             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
@@ -87,7 +84,7 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
-            </div>
+            </div> -->
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
@@ -103,6 +100,299 @@
             </div>
         </div>
     </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Impact</h2>
+                    <h3 class="section-subheading text-muted">Adding value everywhere we go.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/portfolio.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Renewable Feedstock</h4>
+                        <p class="text-muted">Water Hyacinth and Waste Sawdust</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/portfolio.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Full Value Chain</h4>
+                        <p class="text-muted">A Proven Model</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/portfolio.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Driving Down Costs</h4>
+                        <p class="text-muted">Leveraging Economies of Scale</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/portfolio.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Saving the Enviroment</h4>
+                        <p class="text-muted">Eliminating Air Pollution from Sawdust</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/portfolio.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Scalable Technology</h4>
+                        <p class="text-muted">Ability to expand across African Markets</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="images/portfolio.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Stopping Kerosene Explosions</h4>
+                        <p class="text-muted">The Non-Explosive Fuel Agent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tiles Grid Section -->
+    <section id="tiles">
+    <div class="container dynamicTile">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Impact</h2>
+                    <h3 class="section-subheading text-muted">Adding value everywhere we go.</h3>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-2 col-xs-4">
+                    <div id="tile1" class="tile">
+                    
+                     <div class="carousel slide" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                           <img src="images/twitter1.png" class="img-responsive"/>
+                        </div>
+                        <div class="item">
+                           <img src="images/twitter2.png" class="img-responsive"/>
+                        </div>
+                      </div>
+                    </div>
+                     
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-4">
+                    <div id="tile2" class="tile">
+                     
+                     <div class="carousel slide" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="images/hot.png" class="img-responsive"/>
+                        </div>
+                        <div class="item">
+                          <img src="images/hot2.png" class="img-responsive"/>
+                        </div>
+                        <div class="item">
+                          <img src="images/hot3.png" class="img-responsive"/>
+                        </div>
+                      </div>
+                    </div>
+                     
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-4">
+                    <div id="tile3" class="tile">
+                     
+                    <div class="carousel slide" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                           <img src="images/weather2.png" class="img-responsive"/>
+                        </div>
+                        <div class="item">
+                           <img src="images/weather.png" class="img-responsive"/>
+                        </div>
+                        </div>
+                     </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-4">
+                    <div id="tile4" class="tile">
+                     
+                    <div class="carousel slide" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="images/facebook3.png" class="img-responsive"/>
+                        </div>
+                        <div class="item">
+                          <img src="images/facebook2.png" class="img-responsive"/>
+                        </div>
+                      </div>
+                    </div>
+                     
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-4">
+                    <div id="tile5" class="tile">
+                     
+                     <div class="carousel slide" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="images/neews.png" class="img-responsive"/>
+                        </div>
+                        <div class="item">
+                          <img src="images/neews2.png" class="img-responsive"/>
+                        </div>
+                      </div>
+                    </div>
+                     
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-4">
+                    <div id="tile6" class="tile">
+                     
+                     <div class="carousel slide" data-ride="carousel">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="images/skype.png" class="img-responsive"/>
+                        </div>
+                        <div class="item">
+                          <img src="images/skype2.png" class="img-responsive"/>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-xs-8">
+                <div id="tile7" class="tile">
+                 
+                <div class="carousel slide" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="images/gallery.png" class="img-responsive"/>
+                    </div>
+                    <div class="item">
+                      <img src="images/gallery2.png" class="img-responsive"/>
+                    </div>
+                    <div class="item">
+                      <img src="images/gallery3.png" class="img-responsive"/>
+                    </div>
+                  </div>
+                </div>
+                 
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-4">
+                <div id="tile8" class="tile">
+                 
+                 <div class="carousel slide" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                       <img src="images/music.png" class="img-responsive"/>
+                    </div>
+                    <div class="item">
+                       <img src="images/music2.png" class="img-responsive"/>
+                    </div>
+                    </div>
+                 </div>
+                 
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-4">
+                <div id="tile9" class="tile">
+                 
+                  <div class="carousel slide" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="images/calendar.png" class="img-responsive"/>
+                    </div>
+                    <div class="item">
+                      <img src="images/calendar2.png" class="img-responsive"/>
+                    </div>
+                  </div>
+                </div>
+                 
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-8">
+                <div id="tile10" class="tile">
+                 
+                   <div class="carousel slide" data-ride="carousel">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <h3 class="tilecaption"><i class="fa fa-child fa-4x"></i></h3>
+                    </div>
+                    <div class="item">
+                      <h3 class="tilecaption">Customize your tiles</h3>
+                    </div>
+                    <div class="item">
+                      <h3 class="tilecaption">Text, Icons, Images</h3>
+                    </div>
+                    <div class="item">
+                      <h3 class="tilecaption">Combine them and create your metro style</h3>
+                    </div>
+                  
+                  </div>
+                </div>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="cep" class="section-base bg-cep section-pad">
         <div class="vert-text">
@@ -228,6 +518,165 @@
         </div>
     </footer>
 
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Renewable Feedstock</h2>
+                            <p class="item-intro text-muted">Made from a 100% Organic Renewable Energy Source</p>
+                            <img class="img-responsive img-centered" src="images/portfolio-preview.png" alt="">
+                            <p>All of our raw material inputs, such as sawdust, water hyacinth, grasses, food and agricultural wastes, are available in large quantities in Nigeria. We currently source these materials at marginal delivery cost to our plants. The feedstock, such as sawdust, water hyacinth, food wastes, grass and other biomass feedstock, are currently waste products. Largely due to the abundance of sawdust waste across many regions in Nigeria, we are able to achieve very minimal percentage cost on the price of feedstock as well as reduce environmental wastes in our cities and communities where such sawmills are sited. Sawdust combined with certain enzymes will produce bio ethanol gel.</p>
+                            <p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>A Proven Model</h2>
+                            <p class="item-intro text-muted">With a Full Value Chain</p>
+                            <img class="img-responsive img-centered" src="images/portfolio-preview.png" alt="">
+                            <p>Since Nigeria is a large and amazing market, we were careful not to sell a clean cookstove to someone that will not be able to continue purchasing the fuel supply. Our social marketing model helps to deliver on that. Social Entrepreneurs signed up to join us as distributors and educate our market.  For doing so, they receive a share of the profit and carbon credit earnings on a monthly basis.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Leveraging Economies of Scale</h2>
+                            <p class="item-intro text-muted">Driving Down Costs</p>
+                            <img class="img-responsive img-centered" src="images/portfolio-preview.png" alt="">
+                            <p>We are looking to scale up our production to undercut the Nigerian Kerosene market. Currently selling gel for $1.15 per liter USD, Kerosene prices vary between $1.55 and $1 per liter USD. With a major investment in our new production plant we could easily sell the gel for $0.85 at a constant market price. Adding the final step to our value proposition for the future fuel of Western Africa. Better, Safer and Cheaper.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Putting Bio-Waste to Work</h2>
+                            <p class="item-intro text-muted">Protecting the Planet against Climate Change</p>
+                            <img class="img-responsive img-centered" src="images/portfolio-preview.png" alt="">
+                            <p>In Africa, we have huge waste. Dump sites of saw dust burn and produce pollutants to the environment. A sizeable percentage of log input in the Nigerian wood industry ends up as wood waste. Moreover, the volume of sawdust from sawmills continues to increase due to a rise in lumber production to meet growing demand for wood products. Nigeria has not fully exploited the potential for recycling waste materials, especially sawdust. Sawdust heaps are considered waste and therefore are indiscriminately incinerated, making a significant contribution to the greenhouse gas emissions. We accelerated our technology and converted this to clean energy. When you use this to cook, it is safe and clean.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Our Scalable Technology</h2>
+                            <p class="item-intro text-muted">Ready to become Africa's preferred fuel source</p>
+                            <img class="img-responsive img-centered" src="images/portfolio-preview.png" alt="">
+                            <p>Through the operation of the two plants, one in Lagos (which has both an ethanol distillery and gel production plan) and Abuja (which has a gel production plant only), SMEFUNDS has demonstrated that bio-fuel for clean cookstoves is viable, sustainable and scalable.  This has been demonstrated by the fact that there are over 15,000 green entrepreneurs (distribution agents) and over 1.6 million liters of bio-fuel sold in the last two years. The organization is now looking to move to exploit the growing demand we have encountered and generated. In the short term, GEB will peruse this through a three pronged strategy:  establishing a larger plant in Lagos to produce at economies of scale, establish a national micro-refinery program that expands across Nigeria, and vigorous peruse partnerships that will put GEB on the cutting edge of cellulosic ethanol research and development.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 6 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Non-Explosive Fuel Agent</h2>
+                            <p class="item-intro text-muted">We like our customers to be safe.</p>
+                            <img class="img-responsive img-centered" src="images/portfolio-preview.png" alt="">
+                            <p>Kerosene can pollute the room with carbon dioxide, nitrogen dioxide and sulphur dioxide. These elements are a health risk to everyone who breathes them, but are especially dangerous to pregnant women, asthma sufferers, heart patients, the elderly and young children. Kerosene can explode if you use the wrong kind of fuel. Gasoline or the fuel for a camp stove will cause the explosion. Our gels are specially engineered to burn evenly and safely with little air pollution. Minimizing the risks in African homes.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
@@ -248,10 +697,3 @@
     <script src="js/script.js"></script>
 </body>
 </html>
-
-Brian Kernighan's
-
-unsigned int v;          // count the number of bits set in v
-unsigned int c;          // c accumulates the total bits set in v
-for (c = 0; v; c++)
-{   v &= v - 1;  }
