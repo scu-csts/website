@@ -935,7 +935,7 @@
     <section class="social">
     <span></span>
     <div class="holder">
-        <div class="container">
+<!--         <div class="container">
             <div class="soc-item linkedin">
                 <a href=""><span class="name">Linkedin</span>
                 <span class="count">0</span><span class="type">Posts</span></a>
@@ -950,7 +950,7 @@
                         <a href=""><span class="name">Facebook</span>
                         <span class="count">0</span><span class="type">Shares</span></a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     </section>
@@ -1073,6 +1073,7 @@
         <script src="js/googleMapInit.js"></script>
         <script src="js/plugin.min.js"></script>
         <script src="js/count.min.js"></script>
+        <script src="js/jquery.sharrre.min.js"></script>
 
         <script>
             $.backstretch('images/background.jpg');
@@ -1085,7 +1086,45 @@
                 $('#countdown').countdown({until: austDay});
             });
         </script>
-
+<script>
+    //sharre
+    $('.social .holder').sharrre({
+        share: {
+            linkedin: true,
+            facebook: true,
+            twitter: true
+        },
+        buttons: {
+            twitter: {
+                custom: 'Santa Clara University // Center for Science, Technology, and Society',
+                via: 'CSTS',
+                url: false
+            }
+        },
+        template: '<div class="container"><div class="soc-item linkedin"><a href=""><span class="name">LinkedIn</span><span class="count">1,600</span><span class="type">Shares</span></a></div>' +
+                '<div class="soc-item-holder"><div class="soc-item twitter"><a href=""><span class="name">Twitter</span> <span class="count">1,600</span><span class="type">Shares</span></a></div>' +
+                '<div class="soc-item facebook"><a href=""><span class="name">Facebook</span> <span class="count">1,600</span><span class="type">Shares</span></a></div></div></div>',
+        urlCurl: 'js/sharrre.php',
+        enableHover: false,
+        className: '',
+        render: function(api, options) {
+            $(api.element).on('click', '.twitter', function() {
+                api.openPopup('twitter');
+            });
+            $(api.element).on('click', '.facebook', function() {
+                api.openPopup('facebook');
+            });
+            $(api.element).on('click', '.linkedin', function() {
+                api.openPopup('linkedin');
+            });
+            $('.social .linkedin .count').text(options.count.linkedin);
+            $('.social .twitter .count').text(options.count.twitter);
+            $('.social .facebook .count').text(options.count.facebook);
+            var summ = options.count.linkedin + options.count.twitter + options.count.facebook;
+            console.log("Shares summary: "+summ);
+        }
+    });
+</script>
 
 	</body>
 </html>
