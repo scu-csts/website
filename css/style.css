@@ -1346,7 +1346,8 @@ footer a:hover,a:hover, a:focus, a.active{
     font-weight: 300;
 }
 
-
+#count{background: #8BAEA1;}
+#count h1{color: #fff;}
 
 #singlePage{
     padding-bottom:100px;

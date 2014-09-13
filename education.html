@@ -706,7 +706,27 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* END TEXT SEPARATOR */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--/* Count  */-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section id="count">
+            <div class="black-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>Application Opens</h1>
+                    </div>
 
+                    <div class="col-md-12 text-center">
+                        <div id="countdown"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--/* END Count  */-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* TEXT SEPARATOR */-->
@@ -1051,68 +1071,19 @@
         <script src="js/custom.js"></script>
 
         <script src="js/googleMapInit.js"></script>
-
-        <script>
-            // featured gallery overlay
-            (function() {
-                var triggerBttn = document.getElementById( 'trigger-overlay' ),
-                        triggerBttnTwo = document.getElementById( 'trigger-overlay-two' ),
-                        triggerBttnThree = document.getElementById( 'trigger-overlay-three' ),
-                        triggerBttnFour = document.getElementById( 'trigger-overlay-four' ),
-                        // add here more buttons trigger
-
-                        overlay = document.querySelector( 'div.overlay' ),
-                        closeBttn = overlay.querySelector( 'a.overlay-close' );
-                transEndEventNames = {
-                    'WebkitTransition': 'webkitTransitionEnd',
-                    'MozTransition': 'transitionend',
-                    'OTransition': 'oTransitionEnd',
-                    'msTransition': 'MSTransitionEnd',
-                    'transition': 'transitionend'
-                },
-                        transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-                        support = { transitions : Modernizr.csstransitions };
-
-                function toggleOverlay() {
-                    if( classie.has( overlay, 'open' ) ) {
-                        classie.remove( overlay, 'open' );
-                        classie.add( overlay, 'close' );
-                        var onEndTransitionFn = function( ev ) {
-                            if( support.transitions ) {
-                                if( ev.propertyName !== 'visibility' ) return;
-                                this.removeEventListener( transEndEventName, onEndTransitionFn );
-                            }
-                            classie.remove( overlay, 'close' );
-                        };
-                        if( support.transitions ) {
-                            overlay.addEventListener( transEndEventName, onEndTransitionFn );
-                        }
-                        else {
-                            onEndTransitionFn();
-                        }
-                    }
-                    else if( !classie.has( overlay, 'close' ) ) {
-                        classie.add( overlay, 'open' );
-                    }
-
-                    $("div.overlay").animate({ scrollTop: 0 }, "slow");
-                }
-
-                triggerBttn.addEventListener( 'click', toggleOverlay );
-                triggerBttnTwo.addEventListener( 'click', toggleOverlay );
-                triggerBttnThree.addEventListener( 'click', toggleOverlay );
-                triggerBttnFour.addEventListener( 'click', toggleOverlay );
-
-
-                closeBttn.addEventListener( 'click', toggleOverlay );
-                return false;
-            })();
-
-
-        </script>
+        <script src="js/plugin.min.js"></script>
+        <script src="js/count.min.js"></script>
 
         <script>
             $.backstretch('images/background.jpg');
+        </script>
+
+        <script>
+            $(function () {
+                var austDay = new Date();
+                austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 26);
+                $('#countdown').countdown({until: austDay});
+            });
         </script>
 
 
