@@ -77,9 +77,9 @@ section .container{
     margin-bottom:30px;
 }
 .preloaderLogo{
-    min-width: 200px;
-    max-width: 300px;
-    width: 15%;
+    min-width: 300px;
+    max-width: 400px;
+    width: 35%;
 }
 
 
@@ -398,9 +398,16 @@ p.bold{
 
 }
 
-.introLogo{
+.headerLogo{
     position:relative;
     width:160px;
+    bottom: 8px;
+    margin-bottom:20px;
+}
+
+.introLogo{
+    position:relative;
+    width:45%;
     margin-bottom:20px;
 }
 
