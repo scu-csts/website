@@ -240,6 +240,19 @@ $(document).ready(function () {
         ]
     });
 
+    $("#owl-featured2").owlCarousel({
+        items:3,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [980,2],
+        itemsTablet: [768,2],
+        itemsMobile : [479,1],
+        navigation: true,
+        navigationText: [
+            "<i class='fa fa-angle-left fa-2x featuredNav'></i>",
+            "<i class='fa fa-angle-right fa-2x featuredNav'></i>"
+        ]
+    });
+
     $("#owl-blog-single").owlCarousel({
         singleItem:	true,
         navigation: true,
