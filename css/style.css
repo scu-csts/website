@@ -433,7 +433,16 @@ p.bold{
     padding-left:50px;
 }
 
-#text-separator, #text-separator-clients, #text-separator-testimonials, #text-separator-timers{
+#text-separator, #text-separator-clients, #text-separator-timers{
+    background-color: #8BAEA1;
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left:15px;
+    overflow:hidden;
+
+}
+
+#text-separator-testimonials{
     background-color: #1d1d1d;
     padding-top:50px;
     padding-bottom:50px;
