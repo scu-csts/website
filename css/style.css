@@ -1911,6 +1911,11 @@ line-height: 24px;
     padding-bottom:40px;
 }
 
+.smallbuffer{
+    padding-top:5px;
+    padding-bottomr:5px;
+}
+
 /* og grid */
 
 .og-grid {
