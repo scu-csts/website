@@ -125,7 +125,76 @@ section .container{
     overflow:hidden;
 }
 
+/*Gallery Grid*/
+.gallerypadding{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
+.galleryclose{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.no-pad{
+    padding:0px!important;
+    margin:0px!important;
+}
+
+
+.hobby-img{
+    width: 100%;
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+   -webkit-transition: all ease .5s;
+   -moz-transition: all ease .5s;
+   transition: all ease .5s;
+}
+
+.hobby-img:hover{
+    opacity: .2;
+    -webkit-filter: grayscale(100%);
+}
+
+.hobby-link {
+   display: block;
+   position: relative;
+}
+
+.hobby-link .hobby-hover {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+    opacity: 1;
+   -webkit-transition: all ease .5s;
+   -moz-transition: all ease .5s;
+   transition: all ease .5s;
+}
+
+.hobby-link .hobby-hover:hover {
+   opacity: 0;
+}
+
+.hobby-link .hobby-hover .hobby-hover-content {
+   position: absolute;
+   width: 100%;
+   height: 20px;
+   margin-top: -12px;
+    bottom: 15%;
+    left: 8%;
+   font-size: 20px;
+   color: #000;
+}
+
+.hobby-link .hobby-hover .hobby-hover-content i {
+   margin-top: -12px;
+}
+
+.hobby-link .hobby-hover .hobby-hover-content h3,
+.hobby-link .hobby-hover .hobby-hover-content h4 {
+   margin: 0;
+}
+/*End Gallery Grid*/
 
 /*parallax letters*/
 
