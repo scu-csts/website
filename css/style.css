@@ -1609,6 +1609,11 @@ line-height: 24px;
     margin-bottom:30px;
 }
 
+#info .buffer{
+    margin-top:200px;
+    margin-bottom:200px;
+}
+
 #info a {
     margin-top:20px;
 }
