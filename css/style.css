@@ -1488,6 +1488,7 @@ footer a:hover,a:hover, a:focus, a.active{
 
 #count{background: #8BAEA1;}
 #count h1{color: #fff;}
+#count h5{color: #fff;}
 
 #singlePage{
     padding-bottom:100px;
@@ -1588,6 +1589,28 @@ line-height: 24px;
     content: '';
     display: block;
     clear: both;
+}
+
+/*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
+/*<!--Apply Info-->*/
+/*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
+
+#info h1, #info p{
+    color:black;
+
+}
+
+#apply-info{
+    background-color: white;
+}
+
+#info .separator{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+#info a {
+    margin-top:20px;
 }
 
 /* ---- .element-item ---- */
