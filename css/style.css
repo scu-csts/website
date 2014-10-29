@@ -1605,7 +1605,7 @@ line-height: 24px;
 }
 
 #info .separator{
-    margin-top:30px;
+    margin-top:10px;
     margin-bottom:30px;
 }
 
@@ -1616,6 +1616,16 @@ line-height: 24px;
 
 #info a {
     margin-top:20px;
+}
+
+#info img{
+    width:750px;
+    height:500px;
+}
+
+#info .container{
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
 }
 
 /* ---- .element-item ---- */
