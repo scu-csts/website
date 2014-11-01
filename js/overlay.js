@@ -6,6 +6,14 @@
         triggerBttnFive = document.getElementById( 'trigger-overlay-five' ),
         triggerBttnSix = document.getElementById( 'trigger-overlay-six' ),
         triggerBttnSeven = document.getElementById( 'trigger-overlay-seven' ),
+        triggerBttnEight = document.getElementById( 'trigger-overlay-eight' ),
+        triggerBttnNine = document.getElementById( 'trigger-overlay-nine' ),
+        triggerBttnTen = document.getElementById( 'trigger-overlay-ten' )
+        triggerBttnEleven = document.getElementById( 'trigger-overlay-eleven' )
+        triggerBttnTwelve = document.getElementById( 'trigger-overlay-twelve' )
+        triggerBttnThirteen = document.getElementById( 'trigger-overlay-thirteen' )
+        triggerBttnFourteen = document.getElementById( 'trigger-overlay-fourteen' )
+        triggerBttnFifteen = document.getElementById( 'trigger-overlay-fifteen' )
 
         overlay = document.querySelector( 'div.overlay' ),
         closeBttn = overlay.querySelector( 'a.overlay-close' );
@@ -51,6 +59,14 @@
     triggerBttnFive.addEventListener( 'click', toggleOverlay );
     triggerBttnSix.addEventListener( 'click', toggleOverlay );
     triggerBttnSeven.addEventListener( 'click', toggleOverlay );
+    triggerBttnEight.addEventListener( 'click', toggleOverlay );
+    triggerBttnNine.addEventListener( 'click', toggleOverlay );
+    triggerBttnTen.addEventListener( 'click', toggleOverlay );
+    triggerBttnEleven.addEventListener( 'click', toggleOverlay );
+    triggerBttnTwelve.addEventListener( 'click', toggleOverlay );
+    triggerBttnThirteen.addEventListener( 'click', toggleOverlay );
+    triggerBttnFourteen.addEventListener( 'click', toggleOverlay );
+    triggerBttnFifteen.addEventListener( 'click', toggleOverlay );
 
 
     closeBttn.addEventListener( 'click', toggleOverlay );
