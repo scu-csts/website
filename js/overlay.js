@@ -8,15 +8,18 @@
         triggerBttnSeven = document.getElementById( 'trigger-overlay-seven' ),
         triggerBttnEight = document.getElementById( 'trigger-overlay-eight' ),
         triggerBttnNine = document.getElementById( 'trigger-overlay-nine' ),
-        triggerBttnTen = document.getElementById( 'trigger-overlay-ten' )
-        triggerBttnEleven = document.getElementById( 'trigger-overlay-eleven' )
-        triggerBttnTwelve = document.getElementById( 'trigger-overlay-twelve' )
-        triggerBttnThirteen = document.getElementById( 'trigger-overlay-thirteen' )
-        triggerBttnFourteen = document.getElementById( 'trigger-overlay-fourteen' )
-        triggerBttnFifteen = document.getElementById( 'trigger-overlay-fifteen' )
+        triggerBttnTen = document.getElementById( 'trigger-overlay-ten' ),
+        triggerBttnEleven = document.getElementById( 'trigger-overlay-eleven' ),
+        triggerBttnTwelve = document.getElementById( 'trigger-overlay-twelve' ),
+        triggerBttnThirteen = document.getElementById( 'trigger-overlay-thirteen' ),
+        triggerBttnFourteen = document.getElementById( 'trigger-overlay-fourteen' ),
+        triggerBttnFifteen = document.getElementById( 'trigger-overlay-fifteen' ),
+        triggerBttnMenu = document.getElementById( 'trigger-overlay-menu' ),
 
         overlay = document.querySelector( 'div.overlay' ),
-        closeBttn = overlay.querySelector( 'a.overlay-close' );
+        closeBttn = overlay.querySelector( 'a.overlay-close'),
+        menuOverlay = document.querySelector( 'div.menu-overlay' ),
+        menuCloseBttn = menuOverlay.querySelector( 'a.menu-overlay-close');
     transEndEventNames = {
         'WebkitTransition': 'webkitTransitionEnd',
         'MozTransition': 'transitionend',
@@ -52,6 +55,31 @@
         $("div.overlay").animate({ scrollTop: 0 }, "slow");
     }
 
+    function toggleMenuOverlay() {
+        if( classie.has( menuOverlay, 'open' ) ) {
+            classie.remove( menuOverlay, 'open' );
+            classie.add( menuOverlay, 'close' );
+            var onEndTransitionFn = function( ev ) {
+                if( support.transitions ) {
+                    if( ev.propertyName !== 'visibility' ) return;
+                    this.removeEventListener( transEndEventName, onEndTransitionFn );
+                }
+                classie.remove( menuOverlay, 'close' );
+            };
+            if( support.transitions ) {
+                menuOverlay.addEventListener( transEndEventName, onEndTransitionFn );
+            }
+            else {
+                onEndTransitionFn();
+            }
+        }
+        else if( !classie.has( menuOverlay, 'close' ) ) {
+            classie.add( menuOverlay, 'open' );
+        }
+
+        $("div.menuOverlay").animate({ scrollTop: 0 }, "slow");
+    }
+
     triggerBttn.addEventListener( 'click', toggleOverlay );
     triggerBttnTwo.addEventListener( 'click', toggleOverlay );
     triggerBttnThree.addEventListener( 'click', toggleOverlay );
@@ -67,8 +95,10 @@
     triggerBttnThirteen.addEventListener( 'click', toggleOverlay );
     triggerBttnFourteen.addEventListener( 'click', toggleOverlay );
     triggerBttnFifteen.addEventListener( 'click', toggleOverlay );
+    triggerBttnMenu.addEventListener( 'click', toggleMenuOverlay );
 
 
     closeBttn.addEventListener( 'click', toggleOverlay );
+    menuCloseBttn.addEventListener( 'click', toggleMenuOverlay );
     return false;
 })();
