@@ -1,5 +1,6 @@
 (function() {
-    var triggerBttn = document.getElementById( 'trigger-overlay' ),
+    var triggerBttnMenu = document.getElementById( 'trigger-overlay-menu' ),
+        triggerBttn = document.getElementById( 'trigger-overlay' ),
         triggerBttnTwo = document.getElementById( 'trigger-overlay-two' ),
         triggerBttnThree = document.getElementById( 'trigger-overlay-three' ),
         triggerBttnFour = document.getElementById( 'trigger-overlay-four' ),
@@ -14,7 +15,7 @@
         triggerBttnThirteen = document.getElementById( 'trigger-overlay-thirteen' ),
         triggerBttnFourteen = document.getElementById( 'trigger-overlay-fourteen' ),
         triggerBttnFifteen = document.getElementById( 'trigger-overlay-fifteen' ),
-        triggerBttnMenu = document.getElementById( 'trigger-overlay-menu' ),
+
 
         overlay = document.querySelector( 'div.overlay' ),
         closeBttn = overlay.querySelector( 'a.overlay-close'),
@@ -80,6 +81,7 @@
         $("div.menuOverlay").animate({ scrollTop: 0 }, "slow");
     }
 
+    triggerBttnMenu.addEventListener( 'click', toggleMenuOverlay );
     triggerBttn.addEventListener( 'click', toggleOverlay );
     triggerBttnTwo.addEventListener( 'click', toggleOverlay );
     triggerBttnThree.addEventListener( 'click', toggleOverlay );
@@ -95,10 +97,10 @@
     triggerBttnThirteen.addEventListener( 'click', toggleOverlay );
     triggerBttnFourteen.addEventListener( 'click', toggleOverlay );
     triggerBttnFifteen.addEventListener( 'click', toggleOverlay );
-    triggerBttnMenu.addEventListener( 'click', toggleMenuOverlay );
 
 
-    closeBttn.addEventListener( 'click', toggleOverlay );
     menuCloseBttn.addEventListener( 'click', toggleMenuOverlay );
+    closeBttn.addEventListener( 'click', toggleOverlay );
+
     return false;
 })();

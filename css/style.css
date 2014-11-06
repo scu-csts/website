@@ -301,7 +301,7 @@ section .container{
 .parallaxLetter{
     position:absolute;
     font-size:300px;
-    color:#F9F9F9;
+    color:#D3CBB2;
     z-index:1;
     width: 200px;
     height: 300px;
@@ -410,13 +410,13 @@ section .container{
 
 .btn-black:after, .btn-black:before {
 
-    background: #282828;
+    background: #CCCCB1;
 }
 
 .btn-black:hover {
     color: white;
-    background-color: #282828;
-    border-color: #282828;
+    background-color: #CCCCB1;
+    border-color: #CCCCB1;
 }
 
 /*NAVBAR */
@@ -580,7 +580,7 @@ a.white {
 
 .headerLogo{
     position:relative;
-    width:160px;
+    width:170px;
     bottom: 8px;
     margin-bottom:20px;
 }
@@ -609,7 +609,7 @@ a.white {
 }
 
 #text-separator, #text-separator-clients, #text-separator-timers{
-    background-color: #8BAEA1;
+    background-color: #663333;
     padding-top:50px;
     padding-bottom:50px;
     padding-left:15px;
@@ -723,7 +723,7 @@ a.white {
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 
 #about{
-    background-color: white;
+    background-color: #CCCCB9;
 }
 #about .container{
     padding-top:200px;
@@ -1432,12 +1432,12 @@ footer{
 }
 
 footer a{
-    color: #8BAEA1;
+    color: #663333;
     font-weight: 700;
 }
 
 footer a:hover,a:hover, a:focus, a.active{
-    color: rgb(160, 33, 33);
+    color: #CCCCB9;
     text-decoration: none;
 }
 
@@ -1592,7 +1592,7 @@ footer a:hover,a:hover, a:focus, a.active{
     font-weight: 300;
 }
 
-#count{background: #8BAEA1;}
+#count{background: #CCCCB1;}
 #count h1{color: #fff;}
 #count h5{color: #fff;}
 
@@ -1615,8 +1615,12 @@ iframe{border:0;}
 
 /*/featured works*/
 
-#featured-works, #research{
-    background:white;
+#featured-works{
+    background:#CCCCB9;
+}
+
+#research{
+    background:#CCCCB9;
 }
 
 .featureWrapper{
@@ -2008,7 +2012,7 @@ line-height: 24px;
 /* apply */
 
 .apply, .apply a {
-    background: rgb(160, 33, 33);
+    background: #812525;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
