@@ -81,7 +81,15 @@ section .container{
     width: 35%;
 }
 
-
+.preloaderText{
+    font-style: bold;
+    min-width: 300px;
+    max-width: 400px;
+    width: 35%;
+    font-weight: 10px;
+    color:white;
+    padding-top: 15px;
+}
 
 .black-overlay {
     position: absolute;
@@ -573,9 +581,13 @@ a.white {
 /*<!--Intro -->*/
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 
-#intro h1, #intro p{
+#intro h1 {
     color:white;
+}
 
+#intro p{
+    color:white;
+    padding-top: 100px;
 }
 
 .headerLogo{
@@ -1651,6 +1663,50 @@ iframe{border:0;}
     color:white;
 }
 
+/*projects*/
+#projects{
+    background:#CCCCB9;
+}
+
+#projects .container{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#projects .sectionIntro{
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.projectWrapper{
+    padding:10px;
+}
+
+.projectWrapper .caption-heading{
+    padding:10px;
+}
+
+#owl-project .owl-buttons{
+    display:inline-block;
+}
+#owl-project .owl-prev, .owl-next{
+    display:inline-block;}
+
+#owl-project2 .owl-buttons{
+    display:inline-block;
+}
+#owl-project2 .owl-prev, .owl-next{
+    display:inline-block;}
+
+.projectNav{
+
+    margin:10px;
+    padding:5px 10px;
+    background:#282828;
+    color:white;
+}
+
+
 
 /*pages*/
 
@@ -2157,6 +2213,7 @@ line-height: 24px;
 .rightbuffersm{
     padding-right: 5px;
 }
+
 
 /* og grid */
 
