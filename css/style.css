@@ -21,7 +21,7 @@ a{
 }
 
 a:hover, a:focus{
-    color: #626262;
+    color: white;
     text-decoration: none;
     outline: 0;
 }
@@ -98,14 +98,17 @@ section .container{
     width: 100%;
     height: 100%;
     z-index: 0;
-    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* IE10+ */
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: rgba(91, 0, 0, 0.7); 
+}
 
+.donate-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.6); 
 }
 
 /* menu-overlay style */
@@ -309,7 +312,7 @@ section .container{
 .parallaxLetter{
     position:absolute;
     font-size:300px;
-    color:#D3CBB2;
+    color:#EFEFEF;
     z-index:1;
     width: 200px;
     height: 300px;
@@ -362,7 +365,7 @@ section .container{
 }
 
 .btn-default:hover{
-    border-color: white;
+    border-color: #282828;
 }
 
 .btn-default:after, .btn-default:before {
@@ -418,13 +421,13 @@ section .container{
 
 .btn-black:after, .btn-black:before {
 
-    background: #CCCCB1;
+    background: #282828;
 }
 
 .btn-black:hover {
     color: white;
-    background-color: #CCCCB1;
-    border-color: #CCCCB1;
+    background-color: #282828;
+    border-color: #282828;
 }
 
 /*NAVBAR */
@@ -450,7 +453,7 @@ section .container{
 }
 
 .affix{
-    background-color: #282828;
+    background-color: #5B0000;
     padding-top:10px;
     padding-bottom:10px;
 }
@@ -577,6 +580,7 @@ a.white {
 }
 
 
+
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 /*<!--Intro -->*/
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
@@ -621,7 +625,7 @@ a.white {
 }
 
 #text-separator, #text-separator-clients, #text-separator-timers{
-    background-color: #663333;
+    background-color: #5B0000;
     padding-top:50px;
     padding-bottom:50px;
     padding-left:15px;
@@ -630,7 +634,7 @@ a.white {
 }
 
 #text-separator-testimonials{
-    background-color: #1d1d1d;
+    background-color: #5B0000;
     padding-top:50px;
     padding-bottom:50px;
     padding-left:15px;
@@ -735,7 +739,7 @@ a.white {
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 
 #about{
-    background-color: #CCCCB9;
+    background-color: white;
 }
 #about .container{
     padding-top:200px;
@@ -852,7 +856,7 @@ a.white {
 
 .portfolioFilters {
     height:150px;
-    background-color: #1d1d1d;
+    background-color: #5B0000;
 }
 
 #filters{
@@ -877,7 +881,7 @@ a.white {
 }
 
 #portfolio .black-overlay{
-    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(91,0,0,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
     background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
     background: -o-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Opera 12+ */
@@ -1449,7 +1453,7 @@ footer a{
 }
 
 footer a:hover,a:hover, a:focus, a.active{
-    color: #CCCCB9;
+    color: #8C8484;
     text-decoration: none;
 }
 
@@ -1593,20 +1597,20 @@ footer a:hover,a:hover, a:focus, a.active{
     font-size: 48px;
     font-weight: 700;
     line-height: 90px;
-    color:white;
+    color:#282828;
     display:block;
 }
 
 #countdown .countdown-period{
     font-size:14px;
-    color:white;
+    color:#282828;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
 
-#count{background: #CCCCB1;}
-#count h1{color: #fff;}
-#count h5{color: #fff;}
+#count{background: #fff;}
+#count h1{color: #282828;}
+#count h5{color: #282828;}
 
 #singlePage{
     padding-bottom:100px;
@@ -1628,11 +1632,11 @@ iframe{border:0;}
 /*/featured works*/
 
 #featured-works{
-    background:#CCCCB9;
+    background:white;
 }
 
 #research{
-    background:#CCCCB9;
+    background:white;
 }
 
 .featureWrapper{
@@ -1665,7 +1669,7 @@ iframe{border:0;}
 
 /*projects*/
 #projects{
-    background:#CCCCB9;
+    background:white;
 }
 
 #projects .container{
@@ -1674,8 +1678,8 @@ iframe{border:0;}
 }
 
 #projects .sectionIntro{
-    margin-top: 0px;
-    margin-bottom: 50px;
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
 
 .projectWrapper{
@@ -2068,7 +2072,7 @@ line-height: 24px;
 /* apply */
 
 .apply, .apply a {
-    background: #812525;
+    background: #5B0000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2084,7 +2088,7 @@ line-height: 24px;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: #8BAEA1;
+    color: #5B0000;
 }
 
 .apply-btn{
@@ -2110,7 +2114,7 @@ line-height: 24px;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: #8BAEA1;
+    color: #fff;
 }
 
 .donate-btn{
