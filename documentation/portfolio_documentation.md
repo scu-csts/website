@@ -23,5 +23,6 @@
 <img src="images/basicinfo.png" height="500px" width="750px">
 <h7>Change fellow information. Try to get public linkedin link to reference.</h7><br>
 <img src="images/fellowinfo.png" height="500px" width="250px">
+
 </body>
 </html>
