@@ -120,7 +120,7 @@ section .container{
     top: 0;
     left: 0;
     z-index:3000;
-    background: #333;
+    background: rgba(79, 61, 61, 0.8);
     overflow-y: scroll;
 }
 
@@ -235,6 +235,7 @@ section .container{
     z-index:2;
     overflow:hidden;
 }
+
 
 /*Gallery Grid*/
 .gallerypadding{
@@ -2207,6 +2208,10 @@ line-height: 24px;
     padding-bottom:200px;
 }
 
+.menubuffer{
+    padding-top:270px;
+}
+
 .leftbuffersm{
     padding-left: 5px;
 }
@@ -2219,6 +2224,10 @@ line-height: 24px;
     padding-right: 5px;
 }
 
+.mediumbuffer{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
 
 /* og grid */
 

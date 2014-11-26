@@ -21,6 +21,7 @@
         closeBttn = overlay.querySelector( 'a.overlay-close'),
         menuOverlay = document.querySelector( 'div.menu-overlay' ),
         menuCloseBttn = menuOverlay.querySelector( 'a.menu-overlay-close');
+        
     transEndEventNames = {
         'WebkitTransition': 'webkitTransitionEnd',
         'MozTransition': 'transitionend',

@@ -169,6 +169,17 @@ $(document).ready(function () {
         });
     });
 
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    /* overlay menu */
+    /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+        $("a.menu-overlay-ajax").click(function(){
+        var url = $(this).attr("href");
+        $(".menu-overlay-section").load(url + ' #transmitter');
+        $('.menu-overlay-close img').tooltip();
+        $('.menu-overlay-close-list a').tooltip();
+        return false;
+    });
 
     /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     /* smoothscroll */
