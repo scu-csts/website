@@ -58,26 +58,26 @@
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+<!--                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
-                            </button>
+                            </button> -->
                             <a class="navbar-brand" href="http://www.scu.edu/socialbenefit/" target="_blank"><img src="images/scuLogoWhite.png" class="img-responsive headerLogo" alt="Intro Logo"></a>
                         </div>
 
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a data-scroll href="#intro">Home</a></li>
+<!--                                 <li class="active"><a data-scroll href="#intro">Home</a></li>
                                 <li><a data-scroll href="#welcome-separator">Fellowship</a></li>
                                 <li><a data-scroll href="#projects">Projects</a></li>
                                 <li><a data-scroll href="#portfolio">Portfolio</a></li>
                                 <li><a data-scroll href="#about">Grants</a></li>
                                 <li><a data-scroll href="#text-separator-testimonials">Experiences</a></li>
-                                <li><a data-scroll href="#research">Research</a></li>
-                                <li><a data-scroll id="trigger-overlay-menu" class="menu-overlay-ajax hidden" data-toggle="modal"><i class="fa fa-bars fa-2x"></i></a></li>
+                                <li><a data-scroll href="#research">Research</a></li> -->
+                                <li><a id="trigger-overlay-menu" class="menu-overlay-ajax navoverlay"><i class="fa fa-bars fa-2x"></i></a></li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -113,33 +113,87 @@
 
                 <div class="overlay-section"></div>
 
-                <div class="col-md-12 ">
+                <div class="col-md-12">
                     <a class="overlay-close">
                         <br><br>
-                        <img class="img-responsive center-block" src="images/xsep.png" alt="close image"  data-toggle="tooltip" title="Close">
+                        <img class="img-responsive center-block" src="images/xsep.png" alt="close image" title="Close">
                     </a>
                 </div>
             </div>
         </div>
-        <div class="menu-overlay menu-overlay-slidedown">
-            <div class="col-md-12">
+<div id="menuOverlay" class="menu-overlay menu-overlay-slidedown">
+        <div id="page" class="toggle-search searchbarstyle">
+            <form id="searchForm" method="post">
+                <fieldset>
+                    <input id="s" class="searchbar searchbarstyle" type="text" placeholder="Search..."/>
+                </fieldset>
+            </form>
+            <div id="resultsDiv"></div>
+        </div>
+        <div class="row menu-header menu-header-wrapper">
+            <div class="col-xs-offset-1 col-xs-2">
+                <a class="menu-search" id="trigger-search"><img class="img-responsive" src="images/searchWhite.png"></a>
+            </div>
+            <div class="col-xs-6 menu-center">
+                <a class="menu-overlay-header-center-logo" href="http://www.scu.edu" target="_blank"><img class="img-responsive" src="images/scuSeal.png"></a>
+            </div>
+            <div class="col-xs-3">
                 <a class="menu-overlay-close">
-                    <img class="img-responsive" src="images/xsepWhite.png" alt="close image"  data-toggle="tooltip" title="Close">
+                    <img src="images/xsepWhite.png" alt="close image"  data-toggle="tooltip" title="Close">
                 </a>
             </div>
-            <div class="col-md-12 menubuffer">
-                <nav>
-                        <ul>
-                            <li class="mediumbuffer"><a class="menu-overlay-close-list" data data-scroll href="#intro">Home</a></li>
-                            <li class="mediumbuffer"><a class="menu-overlay-close-list" data-toggle="tooltip" data-scroll href="#welcome-separator">Fellowship</a></li>
-                            <li class="mediumbuffer"><a class="menu-overlay-close-list" data-toggle="tooltip" data-scroll href="#portfolio">Portfolio</a></li>
-                            <li class="mediumbuffer"><a class="menu-overlay-close-list" data-toggle="tooltip" data-scroll href="#about">Grants</a></li>
-                            <li class="mediumbuffer"><a class="menu-overlay-close-list" data-toggle="tooltip" data-scroll href="#text-separator-testimonials">Experiences</a></li>
-                            <li class="mediumbuffer"><a class="menu-overlay-close-list" data-toggle="tooltip" data-scroll href="#research">Research</a></li>
-                        </ul>
-                </nav>
-            </div>      
         </div>
+    <div class="menuContent">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                    <ul>
+                        <h4>Center</h4>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">FOR STUDENTS</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">FOR SOCIAL ENTREPRENEURS</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">FOR MENTORS</a></li>
+                        <h4>Institute</h4>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">OVERVIEW</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">MENTORS</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">ENTREPRENEURS</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">ONLINE</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">NETWORK</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">EXPERIENCES</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">COMMUNITY</a></li>
+                    </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                    <ul>
+                        <h4>Education</h4>
+                        <li class="semimediumbuffer"><a class="menu-overlay-close-list menu-overlay-list" data data-scroll href="#intro">HOME</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-close-list menu-overlay-list" data-toggle="tooltip" data-scroll href="#welcome-separator">FELLOWSHIP</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-close-list menu-overlay-list" data-toggle="tooltip" data-scroll href="#projects">PROJECTS</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-close-list menu-overlay-list" data-toggle="tooltip" data-scroll href="#portfolio">PORTFOLIO</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-close-list menu-overlay-list" data-toggle="tooltip" data-scroll href="#about">GRANTS</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-close-list menu-overlay-list" data-toggle="tooltip" data-scroll href="#text-separator-testimonials">EXPERIENCES</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-close-list menu-overlay-list" data-toggle="tooltip" data-scroll href="#research">RESEARCH</a></li>
+                    </ul>
+
+            </div>
+            <div class="col-md-4 text-center">
+                    <ul>
+                        <h4>Impact Capital</h4>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">REPORT</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">NEED</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">TIME HORIZONS</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">CRITERIA</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">DEMAND</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">LOCALIZATION CHECKLIST</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">TERM SHEET</a></li>
+                        <h4>Resources</h4>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">Directory</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">Blog</a></li>
+                        <li class="semimediumbuffer"><a class="menu-overlay-list">Donate</a></li>
+                    </ul>
+            </div>
+        </div>  
+    </div>
+</div>
+
         <!--end OVERLAY FOR THE PORTFOLIO MENU // DONT' DELETE IF YOU PLAN TO USE THIS OPTION-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* Intro  */-->
@@ -1543,6 +1597,7 @@
         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script src="js/overlay.js"></script> <!-- edit to add/remove oeverlay -->
         <script src="js/custom.js"></script>
+        <script src="js/nav.js"></script>
 
         <script src="js/googleMapInit.js"></script>
         <script src="js/plugin.min.js"></script>

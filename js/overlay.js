@@ -1,6 +1,5 @@
 (function() {
-    var triggerBttnMenu = document.getElementById( 'trigger-overlay-menu' ),
-        triggerBttn = document.getElementById( 'trigger-overlay' ),
+    var triggerBttn = document.getElementById( 'trigger-overlay' ),
         triggerBttnTwo = document.getElementById( 'trigger-overlay-two' ),
         triggerBttnThree = document.getElementById( 'trigger-overlay-three' ),
         triggerBttnFour = document.getElementById( 'trigger-overlay-four' ),
@@ -18,9 +17,7 @@
 
 
         overlay = document.querySelector( 'div.overlay' ),
-        closeBttn = overlay.querySelector( 'a.overlay-close'),
-        menuOverlay = document.querySelector( 'div.menu-overlay' ),
-        menuCloseBttn = menuOverlay.querySelector( 'a.menu-overlay-close');
+        closeBttn = overlay.querySelector( 'a.overlay-close');
         
     transEndEventNames = {
         'WebkitTransition': 'webkitTransitionEnd',
@@ -57,32 +54,7 @@
         $("div.overlay").animate({ scrollTop: 0 }, "slow");
     }
 
-    function toggleMenuOverlay() {
-        if( classie.has( menuOverlay, 'open' ) ) {
-            classie.remove( menuOverlay, 'open' );
-            classie.add( menuOverlay, 'close' );
-            var onEndTransitionFn = function( ev ) {
-                if( support.transitions ) {
-                    if( ev.propertyName !== 'visibility' ) return;
-                    this.removeEventListener( transEndEventName, onEndTransitionFn );
-                }
-                classie.remove( menuOverlay, 'close' );
-            };
-            if( support.transitions ) {
-                menuOverlay.addEventListener( transEndEventName, onEndTransitionFn );
-            }
-            else {
-                onEndTransitionFn();
-            }
-        }
-        else if( !classie.has( menuOverlay, 'close' ) ) {
-            classie.add( menuOverlay, 'open' );
-        }
 
-        $("div.menuOverlay").animate({ scrollTop: 0 }, "slow");
-    }
-
-    triggerBttnMenu.addEventListener( 'click', toggleMenuOverlay );
     triggerBttn.addEventListener( 'click', toggleOverlay );
     triggerBttnTwo.addEventListener( 'click', toggleOverlay );
     triggerBttnThree.addEventListener( 'click', toggleOverlay );
@@ -100,7 +72,6 @@
     triggerBttnFifteen.addEventListener( 'click', toggleOverlay );
 
 
-    menuCloseBttn.addEventListener( 'click', toggleMenuOverlay );
     closeBttn.addEventListener( 'click', toggleOverlay );
 
     return false;
