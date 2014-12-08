@@ -131,7 +131,7 @@ section .container{
 }
 
 .menu-overlay-title h4{
-    background-color:#5B0000!important;
+    background-color:#93191b!important;
     color:#fff!important;
 
 }
@@ -167,7 +167,7 @@ section .container{
     display: block;
     color: #fff;
     background-clip: padding-box;
-    background-color: #5B0000;
+    background-color: #93191b;
     opacity: .4;
     padding: 5px 20px;
     font-weight: normal;
@@ -542,7 +542,7 @@ section .container{
 }
 
 .affix{
-    background-color: #5B0000;
+    background-color: #93191b;
     padding-top:10px;
     padding-bottom:10px;
 }
@@ -568,7 +568,7 @@ section .container{
     font-size: 10px;
     font-weight: 900;
     text-transform: uppercase;
-    color: #d5d5d5;
+    color: #AAA;
     letter-spacing: 3px;
     position: relative;
 }
@@ -612,12 +612,12 @@ section .container{
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-    color: #d5d5d5;
+    color: #AAA;
 }
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
     color: #282828;
-    background-color: #d5d5d5;
+    background-color: #AAA;
 }
 
 /*TEXT STYLES*/
@@ -717,7 +717,7 @@ a.white {
 }
 
 #text-separator, #text-separator-clients, #text-separator-timers{
-    background-color: #5B0000;
+    background-color: #93191b;
     padding-top:50px;
     padding-bottom:50px;
     padding-left:15px;
@@ -726,7 +726,7 @@ a.white {
 }
 
 #text-separator-testimonials{
-    background-color: #5B0000;
+    background-color: #93191b;
     padding-top:50px;
     padding-bottom:50px;
     padding-left:15px;
@@ -754,6 +754,7 @@ a.white {
     position:absolute;
     right:0;top:0;
     z-index: 1;
+    max-height: 600px;
 }
 
 .timerWrapper{
@@ -766,7 +767,7 @@ a.white {
 }
 
 .timerWrapper p{
-    color: #d5d5d5;
+    color: #AAA;
 }
 
 
@@ -826,6 +827,13 @@ a.white {
     z-index:6;
 }
 
+.textOverlayIn{
+    padding-bottom: 16px;
+    padding-top: 100px;
+    margin-left: -200px;
+    z-index: 6;
+}
+
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 /*<!--About -->*/
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
@@ -861,13 +869,13 @@ a.white {
 }
 
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
-/*<!--Accelorator -->*/
+/*<!--accelerator -->*/
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 
-#accelorator{
+#accelerator{
     background-color: white;
 }
-#accelorator .container{
+#accelerator .container{
     padding-top:200px;
 }
 
@@ -948,7 +956,7 @@ a.white {
 
 .portfolioFilters {
     height:150px;
-    background-color: #5B0000;
+    background-color: #93191b;
 }
 
 #filters{
@@ -1356,7 +1364,7 @@ a.white {
     font-size:10px;
 }
 .review h4{
-    color:#898989;
+    color:#AAA;
     letter-spacing:0;
     margin-bottom:0px;
 }
@@ -2164,7 +2172,7 @@ line-height: 24px;
 /* apply */
 
 .apply, .apply a {
-    background: #5B0000;
+    background: #93191b;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2180,7 +2188,7 @@ line-height: 24px;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: #5B0000;
+    color: #93191b;
 }
 
 .apply-btn{

@@ -53,13 +53,13 @@
 }
 
 .ip-header .ip-loader svg path.ip-loader-circlebg {
-	stroke: #ddd;
+	stroke: #282828;
 }
 
 .ip-header .ip-loader svg path.ip-loader-circle {
 	-webkit-transition: stroke-dashoffset 0.2s;
 	transition: stroke-dashoffset 0.2s;
-	stroke: #046674;
+	stroke: #93191b;
 }
 
 
