@@ -835,35 +835,35 @@ a.white {
 }
 
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
-/*<!--About -->*/
+/*<!--Grants-->*/
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 
-#about{
+#grants{
     background-color: white;
 }
-#about .container{
+#grants .container{
     padding-top:200px;
 }
 
 
 
-.aboutIconWrapper{
+.grantsIconWrapper{
     position:absolute;
 }
 
-.aboutText{
+.grantsText{
     position:relative;
     padding-left:50px;
 }
 
-.aboutIconWrapper{
+.grantsIconWrapper{
     font-size:80px;
     color:#f5f5f5;
     z-index:0;
 
 }
 
-.aboutItem{
+.grantsItem{
     margin-top:30px;
     margin-bottom:30px;
 }
