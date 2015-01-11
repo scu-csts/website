@@ -234,7 +234,7 @@ $(document).ready(function () {
 
     $("#owl-testimonials").owlCarousel({
         singleItem:	true,
-        autoPlay:	true
+        autoPlay:	7500,
     });
 
 
