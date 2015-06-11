@@ -1,22 +1,21 @@
+/* ---------- at least as big as ------------------ Bootstrap LG ---- */
 @media (min-width: 1200px){
 
 }
 
-
 /*Notebooks and Small Laptops*/
 @media (min-width: 1025px){
-
+    .textSepLogo {
+        opacity: 1;
+    }
 }
 
 /*iPad Landscape Mode and Large Tablets */
 @media (max-width: 1024px){
-
-
 }
 
 /*Small Desktop and Very Small Notebook */
 @media (max-width: 992px){
-
     .widget:first-child{
         margin-top:100px;
     }
@@ -34,7 +33,10 @@
         text-align:center;
         margin-bottom:50px;
     }
+}
 
+/* ---------------------------------------------- Bootstrap MD ---- */
+@media (min-width: 970px){
 
 }
 
@@ -49,9 +51,14 @@
 }
 
 
+/* ---------------------------------------------- Bootstrap SM ---- */
+@media (min-width: 768px){
+
+}
+
+/* ---------------------------------------------- Bootstrap XS ---- */
 /*iPad Portrait Mode, iPad Mini and Small Tablets */
 @media (max-width: 768px){
-
     .serviceBox h2 span {
         letter-spacing:5px;
         font-size:18px;
@@ -63,7 +70,6 @@
         margin-left:0;
         z-index:6;
     }
-
 
     #portfolio .captionWrapper .valign{
         padding-top:130px;
@@ -98,7 +104,6 @@
     .memberDescription{
         text-align: center;
     }
-
 
     .memberParagraph{
         padding-right:0px;
@@ -152,9 +157,6 @@
     .grid-sizer-blog-3{
         width: 50%;
     }
-
-
-
 }
 
 /*iPad Portrait Mode, iPad Mini and Small Tablets */
@@ -190,8 +192,6 @@
         width: 80px;
     }
 
-
-
     .serviceBox h2 span {
         padding: 0;
         border: 0;
@@ -200,7 +200,6 @@
     #singlePageIntro .container {
         padding: 30px;
     }
-
 
     .tableWrapper {
         padding: 30px;
@@ -214,7 +213,6 @@
         font-size: 36px;
         letter-spacing: 10px;
     }
-
 
 }
 
@@ -293,8 +291,6 @@
 
 /*google nexus ish*/
 @media screen and (max-width: 480px) {
-
-
     #text-separator-clients h3 span {
         padding:0;
         border:none;
@@ -310,9 +306,9 @@
     }
 
     #intro .btn-default {
-    font-size: 12px;
-    width: 170px;
-    max-width: 170px;
+        font-size: 12px;
+        width: 170px;
+        max-width: 170px;
     }
 }
 /*Other Major Small Smart Phones*/
@@ -357,19 +353,16 @@
 
 /*iPhone Portrait Mode and Very Small Mobile Phones*/
 @media screen and (max-width: 320px) {
-
-
 }
 
 @media screen and (min-width: 1190px){
-.cbp-rfgrid li div h4 {
-    font-size: 1.4em;
-}
+    .cbp-rfgrid li div h4 {
+        font-size: 1.4em;
+    }
 
-.cbp-rfgrid li div p {
-    font-size: .9em;
-}
-
+    .cbp-rfgrid li div p {
+        font-size: .9em;
+    }
 }
 
 @media screen and (min-width: 1550px){
@@ -377,8 +370,7 @@
     padding-top: 25%;
     padding-left: 15%;
     padding-right: 15%;
-}
-
+    }
 }
 
 @media screen and (min-width: 1920px){
@@ -386,12 +378,10 @@
     padding-top: 35%;
     padding-left: 15%;
     padding-right: 15%;
-}
-
+    }
 }
 
 /* Example for media query: change number of items per row */
-
 @media screen and (max-width: 1190px) {
     .cbp-rfgrid li {
         width: 20%; /* Fallback */
@@ -406,6 +396,7 @@
         width: -webkit-calc(100% / 4);
         width: calc(100% / 4);
     }
+ 
 }
 
 @media screen and (max-width: 660px) {
@@ -439,16 +430,12 @@
 }
 
 @media screen and (max-width: 830px) {
-
     .og-expander h3 { font-size: 32px; }
     .og-expander p { font-size: 13px; }
     .og-expander a { font-size: 12px; }
-
 }
 
 @media screen and (max-width: 650px) {
-
     .og-fullimg { display: none; }
     .og-details { float: none; width: 100%; }
-    
 }
