@@ -774,19 +774,19 @@ a.white {
 
 
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
-/*<!--Welcome Separator -->*/
+/*<!--Fellowship -->*/
 /*<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->*/
 
-#welcome-separator{
+#fellowship{
     background-color:white;
 }
 
-#welcome-separator .col-md-7,
-#welcome-separator .container-fluid{
+#fellowship .col-md-7,
+#fellowship .container-fluid{
     padding:0;
 }
 
-#welcome-separator .separator{
+#fellowship .separator{
     width: 120px;
     max-width: 120px;
     margin-top: 40px;
@@ -794,12 +794,12 @@ a.white {
 }
 
 
-#welcome-separator .image{
+#fellowship .image{
     height:700px;
     overflow:hidden;
 }
 
-#welcome-separator .image img{
+#fellowship .image img{
     height: 100%;
 }
 
