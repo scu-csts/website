@@ -1579,6 +1579,7 @@
                 $('#countdown').countdown({until: austDay});
             });
         </script>
+
         <script>
         //sharre
         $('.social .holder').sharrre({
@@ -1625,5 +1626,15 @@
         });
         </script>
         <script src="js/classie.js"></script>
+
+        <script>
+        function copyToClipboard(element) {
+          $("body").append("<input type='text' id='temp' style='position:absolute;opacity:0;'>");
+          $("#temp").val($(element).text()).select();
+          document.execCommand("copy");
+          $("#temp").remove();
+        }
+        </script>
+
 	</body>
 </html>

@@ -24,7 +24,7 @@
         <link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16">
         <link rel="icon" type="image/png" href="../images/favicon-32x32.png" sizes="32x32">
         <meta name="msapplication-TileColor" content="#1f1f22">
-        <meta name="msapplication-TileImage" content="images/mstile-144x144.png">
+        <meta name="msapplication-TileImage" content="../images/mstile-144x144.png">
 
 
         <!-- Fonts-->
@@ -61,7 +61,7 @@
                     <br><br>
 
                     <div class="clearfix"></div>
-                    <img class="center-block img-responsive separator" src="images/separatorBlack.png" alt="Separator">
+                    <img class="center-block img-responsive separator" src="../images/separatorBlack.png" alt="Separator">
 
                 </div>
             </div>
@@ -132,6 +132,15 @@
                                         </a>
                                         </div>
                                     </li>
+                                    <li>
+                                        <button class="btn btn-default btn-link-copy" 
+                                        onclick="copyToClipboard('#link-equal-access')"
+                                        onhover="showButtonText()">
+                                          <i class="fa fa-link"></i> 
+                                          <span>Copy Direct Link</span>
+                                          <span id="link-equal-access" style="display: none">http://globalsocialbenefit.institute/portfolio/equal-access-direct.html</span>
+                                        </button> 
+                                    </li>
                                 </ul>
                             </div>
 
@@ -142,7 +151,7 @@
 
                     <div class="row singleImageWrapper" data-scroll-reveal="enter top move 30px over 1s after 0.2s">
                         <div class="col-md-12">
-                            <img src="images/background1equalaccess.jpg" alt="single project Info" class="img-responsive center-block">
+                            <img src="../images/background1equalaccess.jpg" alt="single project Info" class="img-responsive center-block">
                         </div>
                     </div>
 
@@ -158,8 +167,8 @@
                     </div>
                     <div class="row single ImageWrapper buffer" data-scroll-reveal="enter top move 30px over 1s after 0.2s">
                         <div class="col-md-6 row text-center">
-                            <img src="images/gallery2equalacess.jpg" alt="single project Info" class="img-responsive center-block">
-                            <div class="buffer"><a class="btn btn-default btn-black" href="pdf/texttolearn.pdf">
+                            <img src="../images/gallery2equalacess.jpg" alt="single project Info" class="img-responsive center-block">
+                            <div class="buffer"><a class="btn btn-default btn-black" href="../pdf/texttolearn.pdf">
                             Text 2 Learn
                             </a></div>
                         </div>
@@ -177,6 +186,11 @@
                         See More At Equalaccess.org
                     </a>
                 </div>
+                <div class="row text-center" style="margin-top: 40px">
+                    <a class="btn btn-default btn-black" href="../education.html">
+                    Education and Action Research
+                    </a> 
+                </div> 
                 <!--end content-->
 
             </div> <!-- /container -->

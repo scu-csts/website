@@ -519,7 +519,12 @@ section .container{
     background-color: #282828;
     border-color: #282828;
 }
-
+.btn-link-copy {
+   color: black; 
+   display: inline; 
+   text-transform: none;
+   padding: 0 5px;
+}
 /*NAVBAR */
 
 .navbar-default {
